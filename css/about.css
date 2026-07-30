@@ -133,6 +133,15 @@ nav a:hover {
     margin-bottom: 80px;
 }
 /* コピー　*/
+
+footer {
+  position: relative;
+  padding: 80px 0 40px;
+  background: #fffdf8;
+  overflow: visible;
+}
+
+	
 .wave {
     height:80px;
     overflow:hidden;
