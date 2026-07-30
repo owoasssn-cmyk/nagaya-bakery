@@ -1,0 +1,427 @@
+@charset "UTF-8";
+
+body {
+  color: #333;
+  background: #eeeee5;
+  font-family: "Zen Kaku Gothic New", "Yu Gothic", "游ゴシック", sans-serif;
+  line-height: 1.8;
+//  overflow-x: hidden;
+}
+
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+#wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  background: #eeeee5;
+}
+
+header {
+  background: #eeeee5;
+}
+
+.header_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.logo img {
+  width: 450px;
+}
+
+.header_inner nav ul {
+  display: flex;
+  gap: 45px;.
+}
+
+nav a {
+  font-size: 15px;
+}
+
+nav a:hover {
+  color: #a77b55;
+}
+
+
+
+/*　ここまでコピー　*/
+
+.page_title {
+  margin-bottom: 30px;
+  color: #b48c63;
+  font-size: 28px;
+  font-weight: normal;
+}
+
+
+
+.news, .shop_area {
+  padding: 80px 0;
+  background: #f5f3ed;
+  padding: 80px 100px;
+}
+
+
+.news dl {
+  border-top: 1px solid #8d8989;
+}
+
+.news dt {
+  float: left;
+  width: 100px;
+  padding-top: 13px;
+  color: #8a6544;
+  font-size: 14px;
+}
+
+.news dd {
+  padding: 13px 0 13px 100px;
+  border-bottom: 1px solid #8d8989;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.news dd a:hover {
+  color: #a77b55;
+}
+
+
+
+.calendar_area, .inst_area {
+  padding: 80px 0;
+  background: #eeeee5;
+  padding: 80px 100px;
+}
+
+
+
+.calendar {
+  display: flex;
+  justify-content: space-between;
+  padding: 35px;
+}
+
+.month {
+  display: flex;
+  font-size: 18px;
+}
+
+.month_01, .month_02 {
+  width: 40%;
+  padding: 25px;
+  background: #fffdf8;
+  text-align: center;
+}
+
+.calendar table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar th, .calendar td {
+  width: 14.2%;
+  padding: 8px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.maru {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #f6ad3c;
+}
+
+.maru_01 {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #f6ad3c;
+
+}
+
+.event {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border-radius: 50%;
+  background: #f77777;
+  line-height: 28px;
+}
+
+.event_01 {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  border-radius: 50%;
+  background: #f77777;
+  line-height: 28px;
+}
+
+.maru_text {
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+
+
+.tooltip {
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip_text {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  z-index: 100;
+
+  width: 190px;
+  padding: 10px;
+
+  background: #fffdf8;
+  border: 1px solid #a77b55;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
+
+  color: #333;
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: center;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%);
+  transition: .3s;
+}
+
+.tooltip:hover .tooltip_text {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tooltip_text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+
+  border: 7px solid transparent;
+  border-top-color: #fffdf8;
+
+  transform: translateX(-50%);
+}
+
+
+
+.shop_area {
+  display: flex;
+}
+
+.shop_info {
+  flex: 1;
+
+}
+
+
+.shop_info dl {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 15px;
+}
+
+.shop_info dt {
+  width: 90px;
+  margin-bottom: 18px;
+  font-weight: bold;
+}
+
+.shop_info dd {
+  width: calc(100% - 90px);
+  margin-bottom: 18px;
+}
+
+
+.map {
+  width: 450px;
+  height: 450px;
+  margin: 30px 0 0 0;
+}
+
+
+
+.inst_title {
+  display: flex;
+}
+
+.inst_title img {
+  width: 45px;
+  height: 45px;
+  margin: 0 5px 0 0;
+}
+
+.about_btn a {
+  display: inline-block;
+  padding: 3px 15px;
+  margin-top: 20px;
+  background: #eeeee5;
+  border: 2px solid #a77b55; 
+  color: #a77b55;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,.08);
+  transition: .3s;
+}
+
+.about_btn a:hover {
+  background: #a77b55;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.inst_photo {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inst_photo img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 20px 5px 0;
+  cursor: pointer;
+}
+
+
+
+.polaroid {
+  width: 320px;
+  background: #fff;
+  padding: 15px 15px 35px;
+  border-radius: 3px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.2);
+  margin: 0 auto;
+}
+
+.polaroid img{
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.polaroid_text{
+  margin-top: 20px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #555;
+}
+
+footer {
+  position: relative;
+  padding: 80px 0 40px;
+  background: #fffdf8;
+  overflow: visible;
+}
+
+
+.wave{
+  height:80px;
+  overflow:hidden;
+}
+
+.wave svg{
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.wave path{
+  fill:#fffdf8;
+}
+
+.footer_inner {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+
+.footer_bottom{
+  padding-top: 30px;
+  text-align: center;
+  background: #fffdf8;
+}
+
+.footer_nav ul{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.footer_nav a{
+  font-size: 14px;
+}
+
+.footer_nav a:hover {
+  color: #a77b55;
+}
+
+.footer_copy{
+  font-size: 16px;
+  letter-spacing: 0.1em;
+}
+
+.copyright{
+  font-size: 13px;
+  color: #777;
+}
+
+.footer_logo {
+  width: 250px;
+  margin-top: 0;
+  margin-left: auto;  
+  margin-right: auto;
+}
+
+
+
+.pagetop {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  z-index: 1;
+}
+.pagetop a {
+	display: block;
+	text-decoration: none;
+	padding: 10px 10px;
+	border-radius: 10px;
+}
+ 
+.pagetop a:hover {
+	display: block;
+	font-size: 12px;
+	text-decoration: none;
+	padding:10px 10px;
+}
+
+.pagetop img {
+  width: 70px;
+}
+
+
+

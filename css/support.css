@@ -1,0 +1,335 @@
+@charset "UTF-8";
+
+body {
+  color: #333;
+  background: #eeeee5;
+  font-family: "Zen Kaku Gothic New", "Yu Gothic", "游ゴシック", sans-serif;
+  line-height: 1.8;
+}
+
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+#wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  background: #eeeee5;
+}
+
+header {
+  background: #eeeee5;
+}
+
+.header_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.logo img {
+  width: 450px;
+}
+
+.header_inner nav ul {
+  display: flex;
+  gap: 45px;.
+}
+
+
+nav a {
+  font-size: 15px;
+}
+
+nav a:hover {
+  color: #a77b55;
+}
+/*　ここまでコピー　*/
+
+
+
+
+.page_title {
+  margin-bottom: 30px;
+  color: #b48c63;
+  font-size: 28px;
+  font-weight: normal;
+}
+
+
+
+.qanda_area {
+  padding: 80px 100px;
+  background: #f5f3ed;
+}
+
+
+.support_area {
+  padding: 80px 100px;
+  background: #eeeee5;
+}
+
+
+.contact_area {
+    padding: 80px 100px;
+    background: #f5f3ed;
+}
+
+.contact_text {
+    margin-bottom: 40px;
+}
+
+.contact_form {  
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact_form dt {
+    width: 220px;
+    padding: 20px 0;
+    border-top: 1px solid #d7c7b6;
+    font-weight: 500;
+}
+
+.contact_form dd {
+    width: calc(100% - 220px);
+    padding: 15px 0;
+    border-top: 1px solid #d7c7b6;
+}
+
+.contact_form span {
+    margin-left: 8px;
+    color: #c55;
+    font-size: 12px;
+}
+
+.contact_form input, .contact_form select, .contact_form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d6c2ad;
+    border-radius: 8px;
+    background: #fff;
+    font-family: inherit;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.contact_form textarea {
+    resize: vertical;
+}
+
+.submit_btn {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.submit_btn input {
+    padding: 12px 40px;
+    border: 2px solid #a77b55;
+    border-radius: 30px;
+    background: #eeeee5;
+    color: #a77b55;
+    cursor: pointer;
+    transition: 3s;
+    font-size: 15px;
+}
+
+.submit_btn input:hover {
+    background: #a77b55;
+    color: #fff;
+}
+
+.inst_area {
+    margin: 30px 0;
+}
+
+
+.inst {
+    display: flex;
+}
+
+.inst p {
+    font-size: 20px;
+}
+
+.inst img {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px 0 0;
+}
+
+.about_btn a {
+  display: inline-block;
+  padding: 3px 10px;
+  margin-top: 20px;
+  background: #eeeee5;
+  border: 2px solid #a77b55; 
+  color: #a77b55;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,.08);
+  transition: .3s;
+}
+
+.about_btn a:hover {
+  background: #a77b55;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+
+footer {
+  position: relative;
+  padding: 80px 0 40px;
+  background: #fffdf8;
+  overflow: visible;
+}
+
+
+.wave{
+  height:80px;
+  overflow:hidden;
+}
+
+.wave svg{
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.wave path{
+  fill:#fffdf8;
+}
+
+.footer_inner {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+
+.footer_bottom{
+  padding-top: 30px;
+  text-align: center;
+  background: #fffdf8;
+}
+
+.footer_nav ul{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.footer_nav a{
+  font-size: 14px;
+}
+
+.footer_nav a:hover {
+  color: #a77b55;
+}
+
+.footer_copy{
+  font-size: 16px;
+  letter-spacing: 0.1em;
+}
+
+.copyright{
+  font-size: 13px;
+  color: #777;
+}
+
+.footer_logo {
+  width: 250px;
+  margin-top: 0;
+  margin-left: auto;  
+  margin-right: auto;
+}
+
+
+
+.pagetop {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  z-index: 1;
+}
+.pagetop a {
+	display: block;
+	text-decoration: none;
+	padding: 10px 10px;
+	border-radius: 10px;
+}
+ 
+.pagetop a:hover {
+	display: block;
+	font-size: 12px;
+	text-decoration: none;
+	padding:10px 10px;
+}
+
+.pagetop img {
+  width: 70px;
+
+}
+
+
+.faq-ttl {
+  position: relative;
+  padding: 15px 9% 15px 15px;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.faq-ttl p,
+.faq-content p {
+  display: flex;
+}
+.faq-ttl p::before {
+  content: 'Q.';
+  display: inline-block;
+  margin-right: 1em;
+}
+.faq-content + .faq-ttl {
+  margin-top: 25px;
+}
+.faq-content {
+  display: none;
+  margin-top: 10px;
+  margin-left: 0;
+  padding: 10px 15px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.faq-content p::before {
+  content: 'A.';
+  display: inline-block;
+  margin-right: 1em;
+  color: red;
+}
+
+/* 「+」を追加 */
+.faq-ttl::before,
+.faq-ttl::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 4%;
+  width: 12px;
+  height: 1px;
+  margin: auto;
+  background-color: #000;
+}
+.faq-ttl::after {
+  transform: rotate(90deg);
+  transition: .3s;
+}
+/* クリックしたときに「+」を「−」に変更 */
+.faq-ttl.is-active::after {
+  transform: rotate(180deg);
+}

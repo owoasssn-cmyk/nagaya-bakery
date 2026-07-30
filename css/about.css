@@ -1,0 +1,211 @@
+@charset "UTF-8";
+
+body {
+    color: #333;
+    background: #eeeee5;
+    font-family: "Zen Kaku Gothic New", "Yu Gothic", "游ゴシック", sans-serif;
+    line-height: 1.8;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+#wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    background: #eeeee5;
+}
+
+header {
+    background: #eeeee5;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 40px 20px;
+}
+
+.logo img {
+    width: 450px;
+}
+
+.header_inner nav ul {
+  display: flex;
+  gap: 45px;.
+}
+
+nav a {
+    font-size: 15px;
+}
+
+nav a:hover {
+  color: #a77b55;
+}
+/*　ここまでコピー　*/
+
+.about_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 100px;
+}
+
+.about_text {
+    width: 42%;
+}
+
+.about_img {
+    width: 45%;
+    border-radius: 20px;
+}
+
+.about_img img {
+    border-radius: 20px;
+}
+
+.about_text h2 {
+    margin-bottom: 30px;
+    color: #b48c63;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.about_text p {
+    margin-bottom: 20px;
+}
+
+.concept_section {
+    background: #f5f3ed;
+}
+
+.reason_section {
+    background: #eeeee5;
+}
+
+.kodawari_section {
+    padding: 80px 100px 0;
+    background: #f5f3ed;
+}
+
+.kodawari_title {
+    width: 42%;
+    color: #b48c63;
+    font-size: 28px;
+    font-weight: normal;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.kodawari_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.kodawari_box {
+    width: 30%;
+    align-items: center;
+}
+
+.kodawari_box figure {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+.kodawari_box img {
+    width: 60%;
+}
+
+.kodawari_box p {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+/* コピー　*/
+.wave {
+    height:80px;
+    overflow:hidden;
+    line-height:0;
+    background: #f5f3ed; /* 波線 コンテンツと同じ色　*/
+}
+
+.wave path {
+    fill:#eeeee5; /* 波線 フッターと同じ色　*/
+}
+
+.footer_bottom {
+margin-top: 60px;
+text-align: center;
+}
+
+.footer_nav ul {
+display: flex;
+justify-content: center;
+gap: 30px;
+margin-bottom: 25px;
+}
+
+.footer_nav a {
+font-size: 14px;
+}
+
+.footer_copy {
+font-size: 16px;
+letter-spacing: 0.1em;
+}
+
+.copyright {
+font-size: 13px;
+color: #777;
+}
+
+.footer_logo {
+  width: 250px;
+  margin-top: 0;
+  margin-left: auto;  
+  margin-right: auto;
+}
+
+
+.pagetop {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    z-index: 1;
+}
+.pagetop a {
+	display: block;
+//	background-color: rgba(241, 213, 160, 0.7);
+	text-align: center;
+//	color: #FFF;
+	font-size: 12px;
+	text-decoration: none;
+	padding: 10px 10px;
+	border-radius: 10px;
+}
+ 
+.pagetop a:hover {
+	display: block;
+//	background-color: rgba(99, 53, 16, 0.7);
+	text-align: center;
+//	color: #FFE6D9;
+	font-size: 12px;
+	text-decoration: none;
+	padding:10px 10px;
+}
+
+.pagetop img {
+  width: 70px;
+}
