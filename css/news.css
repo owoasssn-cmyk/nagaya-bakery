@@ -335,13 +335,6 @@ footer {
   overflow: visible;
 }
 
-	.fiction-note {
-  font-size: 16px;
-  color: #777;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
 
 .wave{
   height:80px;
@@ -403,7 +396,12 @@ footer {
   margin-right: auto;
 }
 
-
+.fiction-note {
+  font-size: 16px;
+  color: #777;
+  text-align: center;
+  margin-bottom: 10px;
+}
 
 .pagetop {
   display: none;
